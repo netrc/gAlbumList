@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <title>G Photo Album List</title>
+        <style>
+        body {
+            font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+            font-size: 100%;
+        }
+        #status {
+            white-space: pre;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            width: 600px;
+        }
+        .dataNumItems {
+            font-style: italic;
+            font-size: 9pt;
+        }
+        .dataDateStr {
+            font-style: italic;
+            font-size: 9pt;
+        }
+        </style>
+        <!--
+        - JavaScript and HTML must be in separate files:
+        - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+        -->
+        <script src="popup.js"></script>
+    </head>
+    <body>
+        <!-- everything gets added programmatically -->
+        <div id="status"> </div>
+        <table id="albumTable"> </table>
+    </body>
+</html>

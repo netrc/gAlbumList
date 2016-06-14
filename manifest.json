@@ -1,0 +1,23 @@
+
+{
+    "manifest_version": 2,
+    "version": "0.2",
+
+    "name": "Google Photos Albums List",
+    "description": "Displays names/info for all Google Photo Albums",
+
+    "content_scripts": [
+        { 
+        "matches": ["https://photos.google.com/albums"],
+        "js": [ "myc.js" ]
+        }
+    ],
+    "browser_action": {
+        "default_title": "List photo albums",
+        "default_icon": "icon32.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "activeTab"
+    ]
+}
